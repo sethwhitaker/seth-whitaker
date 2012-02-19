@@ -1,0 +1,52 @@
+#footer {
+     background: url("../img/footer-bg.png") repeat-x scroll 0 0 transparent;
+     border-top: 2px solid #D1CFCF;
+     height: 287px;
+     overflow: hidden;
+}
+#footer-inner {
+     margin: 0 auto;
+     overflow: hidden;
+     padding: 25px 0;
+     width: 900px;
+}
+#greeting {
+     width: 275px;
+}
+#greeting p {
+     font-family: Arial,Helvetica,san-serif;
+     font-size: 20px;
+}
+#contact-form {
+     padding: 0 25px;
+}
+.text-input {
+     background: url("../img/input-bg.png") no-repeat scroll 0 0 transparent;
+     color: #FFFFFF;
+     height: 30px;
+     padding: 10px;
+     width: 358px;
+}
+#contact-form input {
+     background: none repeat scroll 0 0 transparent;
+     border: medium none;
+     color: #959595;
+     font-family: arial,helvetica,san-serif;
+     font-weight: bold;
+     width: 333px;
+}
+.text-area {
+     background: url("../img/text-area-bg.png") no-repeat scroll 0 0 transparent;
+     height: 121px;
+     padding: 10px;
+}
+#contact-form textarea {
+     background: none repeat scroll 0 0 transparent;
+     border: medium none;
+     color: #959595;
+     font-family: arial,helvetica,san-serif;
+     font-size: 10pt;
+     font-weight: bold;
+     height: 103px;
+     width: 338px;
+}

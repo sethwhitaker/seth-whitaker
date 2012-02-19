@@ -1,0 +1,33 @@
+#header {
+     background: url("../img/footer-bg.png") repeat-x scroll 0 0 transparent;
+     border-bottom: 2px solid #D1CFCF;
+     margin: 0pt auto 40px;
+     overflow: hidden;
+     position: relative;
+}
+#header-inner{
+	width:960px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#header-left {
+     margin-left: 33px;
+     margin-top: 20px;
+}
+
+#header h1 a {
+     border: medium none;
+     color: #555555;
+     text-decoration: none;
+}
+
+#header h2 {
+     font-size: 24px;
+     padding: 0 75px 15px;
+}
+
+#header-right {
+     margin-right: 33px;
+     margin-top: 40px;
+}
