@@ -310,7 +310,7 @@ new Vue({
         open_nav: false,
         rtime: new Date(1, 1, 2000, 12,00,00),
         timeout: false,
-        delta: 200,
+        delta: 150,
         version: null
     },
 
@@ -626,7 +626,7 @@ new Vue({
 
                 setTimeout(function() {
                     _this.groups_loaded = true;
-                }, 1000);
+                }, 0);
             }
         },
 
@@ -642,7 +642,7 @@ new Vue({
 
                 setTimeout(function() {
                     _this.loaded = true;
-                }, 2000);
+                }, 0);
             }
         },
 
