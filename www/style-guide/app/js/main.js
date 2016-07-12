@@ -303,7 +303,6 @@ new Vue({
         open_group: null,
         show_first_page_on_load: false,
         scrolling_to: false,
-        sidebar_scrolling: false,
         window_outer_width: 0,
         breakpoint: 960,
         mobile_view: false,
@@ -404,31 +403,6 @@ new Vue({
         _this.mobile_view = _this.window_outer_width >= _this.breakpoint ? false : true;
 
         window.addEventListener('scroll', _this.setScrollPosition);
-        window.addEventListener('resize', function() {
-            _this.window_outer_width = window.outerWidth;
-            _this.setScrollPosition();
-
-            _this.mobile_view = _this.window_outer_width >= _this.breakpoint ? false : true;
-
-            _this.rtime = new Date();
-
-            if (_this.timeout === false && !_this.mobile_view) {
-                _this.timeout = true;
-                setTimeout(_this.resizeFadeToggle, _this.delta);
-            }
-        });
-
-        /**
-         * Disable body scrolling when mouseover/mouseleave
-         * sidebar to prevent library scroll jumping.
-         */
-        var sidebar = document.querySelector('.ndpl-sidebar');
-        sidebar.addEventListener('mouseover', function(e) {
-            _this.sidebar_scrolling = true;
-        })
-        sidebar.addEventListener('mouseleave', function(e) {
-            _this.sidebar_scrolling = false;
-        });
 
         /**
          * Set active page based on hash or show first
@@ -786,27 +760,6 @@ new Vue({
             });
 
             _this.updateHash(page.name);
-        },
-
-        /**
-         * Toggle container fade on resize.
-         */
-        resizeFadeToggle: function() {
-            var _this = this;
-
-            _this.resizing = true;
-            _this.$broadcast('resizing', true);
-
-            if (new Date() - _this.rtime < _this.delta) {
-                setTimeout(_this.resizeFadeToggle, _this.delta);
-            } else {
-                _this.timeout = false;
-
-                setTimeout(function() {
-                    _this.resizing = false;
-                    _this.$broadcast('resizing', false);
-                }, 1000);
-            }
         },
 
         /**
