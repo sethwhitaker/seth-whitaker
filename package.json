@@ -1,40 +1,25 @@
 {
   "name": "seth-whitaker",
-  "description": "Seth's Portfolio Site",
-  "version": "1.0",
-  "homepage": "https://github.com/sdw3489/seth-whitaker",
-  "author": {
-    "name": "Seth Whitaker",
-    "url": "http://github.com/sdw3489/"
+  "version": "1.0.0",
+  "description": "Seth Whitaker Portfolio",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sdw3489/seth-whitaker.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sdw3489/seth-whitaker/issues"
-  },
-  "engines": {
-    "node": ">=0.8"
-  },
-  "scripts": {
-    "test": "grunt assemble"
-  },
-  "devDependencies": {
-    "assemble": "~0.4.33",
-    "grunt": "~0.4.2",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-connect": "~0.6.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "load-grunt-tasks": "~0.2.1",
-    "time-grunt": "~0.2.7"
+    "url": "git+https://github.com/sethwhitaker/seth-whitaker.git"
   },
   "keywords": [
-    "assemble",
-    "templates",
-    "handlebars",
-    "site generator",
-    "site builder",
-    "grunt"
-  ]
+    "Portfolio"
+  ],
+  "author": "Seth Whitaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethwhitaker/seth-whitaker/issues"
+  },
+  "homepage": "https://github.com/sethwhitaker/seth-whitaker#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
 }
+
