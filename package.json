@@ -19,7 +19,10 @@
   },
   "homepage": "https://github.com/sethwhitaker/seth-whitaker#readme",
   "devDependencies": {
+    "assemble": "^0.16.1",
     "gulp": "^3.9.1",
+    "gulp-extname": "^0.2.2",
+    "gulp-htmlmin": "^2.0.0",
     "gulp-sass": "^2.3.2"
   }
 }
