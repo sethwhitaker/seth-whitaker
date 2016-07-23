@@ -42,225 +42,97 @@ layout: default.hbs
     </div>
   </div>
 
-  <div id="work" class="content-section-b">
+  <div id="work">
 
-    <div class="container">
+    {{#parseJSON '{
+      "content-section-type" : "b",
+      "project-heading" : "Samsung",
+      "project-copy" : "At MCD we developed a ground up rebuild of the entire <a href=\"http://samsung.com\">Samsung.com</a> experience from shopping to product showcase. I led a small team of developers for 8 months creating fully responsive custom front end templates and a style guide framework for Samsung.",
+      "project-image" : "display_samsung.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Samsung</h2>
-          <p class="lead">At MCD we developed a ground up rebuild of the entire <a href="http://samsung.com">Samsung.com</a> experience from shopping to product showcase. I led a small team of developers for 8 months creating fully responsive custom front end templates and a style guide framework for Samsung.</p>
-        </div>
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <img class="img-responsive" src="img/display_samsung.jpg" alt="">
-        </div>
-      </div>
+    {{#parseJSON '{
+      "content-section-type" : "a",
+      "project-heading" : "Bethesda.net",
+      "project-copy" : "Worked with & lead a small team at Rokkan to create a new platform for Bethesda Gaming called <a href=\"http://bethesda.net/\">Bethesda.net</a>.",
+      "project-image" : "display_bethesda.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
-    </div>
-    <!-- /.container -->
+    {{#parseJSON '{
+      "content-section-type" : "b",
+      "project-heading" : "Student Loans",
+      "project-copy" : "At MCD we created a new fully responsive informational website for Discover\'s Student Loan Division. <a href=\"http://studentloan.com\">Studentloan.com</a> is a brand new responsive experience for education about all things student loans. The website was built on wordpress for ease of use by our clients.",
+      "project-image" : "display_studentloans.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
-  </div>
-  <!-- /.content-section-b -->
+    {{#parseJSON '{
+      "content-section-type" : "a",
+      "project-heading" : "Kim Group Lab",
+      "project-copy" : "The Kim Group members wanted to have an easier website to share news, publications and research. I Collaborated with a designer to redesign and re-develop the Kim Group Lab website with a wordpress backend to achieve this goal.<br><br>Visit the website <a href=\"http://kim.physics.harvard.edu/\">here.</a>",
+      "project-image" : "display_kimgroup.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
-  <!-- Page Content -->
-  <div class="content-section-a">
+    {{#parseJSON '{
+      "content-section-type" : "b",
+      "project-heading" : "Osage Advisors",
+      "project-copy" : "Designing and developing a brand new website for boutique advisory firm Osage Advisors. Focus was to create a clean and consistent design for the modern web. The website is fully responsive with customized views for tablets and phone devices.",
+      "project-image" : "display_osage.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
-    <div class="container">
+    {{#parseJSON '{
+      "content-section-type" : "a",
+      "project-heading" : "Rainmaker Designs",
+      "project-copy" : "Rebuilding a new experience for browsing the Rainmaker Designs website. Tyler Jason Designed and I built the framework for a unique website which slides sideways to unveil the content your looking for.",
+      "project-image" : "display_rainmaker.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
-      <div class="row">
-        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Bethesda.net</h2>
-          <p class="lead">Worked with & lead a small team at Rokkan to create a new platform for Bethesda Gaming called <a href="http://bethesda.net/">Bethesda.net</a>.</p>
-        </div>
-        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-          <img class="img-responsive" src="img/display_bethesda.jpg" alt="">
-        </div>
-      </div>
+    {{#parseJSON '{
+      "content-section-type" : "b",
+      "project-heading" : "Fusion Salon",
+      "project-copy" : "Redesign of the Rochester based Fusion Salon developed with Tyler Jason and Nick Law. The website is inspired by the Windows OS look and is built on top of wordpress to allow the client to easily update any part of the website in a snap. My role on the project was developing the site functionality.",
+      "project-image" : "display_fusion.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
-    </div>
-    <!-- /.container -->
+    {{#parseJSON '{
+      "content-section-type" : "a",
+      "project-heading" : "Mark Haven Photography",
+      "project-copy" : "Mark Haven is a popular 80′s Photographer from New York City and Rochester. Tyler Jason and I built him a new portfolio website to showcase his work.",
+      "project-image" : "display_markhaven.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
-  </div>
-  <!-- /.content-section-a -->
+    {{#parseJSON '{
+      "content-section-type" : "b",
+      "project-heading" : "Jon Johns Bakery",
+      "project-copy" : "A delicious new design centered around vibrant imagery of Jon Johns Bakery treats. Jon & John wanted a new space to keep customers up to date about the local bakery and events. Website was designed and developed with Tyler Jason.",
+      "project-image" : "display_jonjohns.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
-  <div class="content-section-b">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Student Loans</h2>
-          <p class="lead">At MCD we created a new fully responsive informational website for Discover's Student Loan Division. <a href="http://studentloan.com">Studentloan.com</a> is a brand new responsive experience for education about all things student loans. The website was built on wordpress for ease of use by our clients.</p>
-        </div>
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <img class="img-responsive" src="img/display_studentloans.jpg" alt="">
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </div>
-  <!-- /.content-section-b -->
-
-  <!-- Page Content -->
-  <div class="content-section-a">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Kim Group Lab</h2>
-          <p class="lead">The Kim Group members wanted to have an easier website to share news, publications and research. I Collaborated with a designer to redesign and re-develop the Kim Group Lab website with a wordpress backend to achieve this goal.</p>
-          <p>Visit the website <a href="http://kim.physics.harvard.edu/">here.</a> </p>
-        </div>
-        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-          <img class="img-responsive" src="img/display_kimgroup.jpg" alt="">
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </div>
-  <!-- /.content-section-a -->
-
-  <div class="content-section-b">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Osage Advisors</h2>
-          <p class="lead">Designing and developing a brand new website for boutique advisory firm Osage Advisors. Focus was to create a clean and consistent design for the modern web. The website is fully responsive with customized views for tablets and phone devices.</p>
-        </div>
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <img class="img-responsive" src="img/display_osage.jpg" alt="">
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
+    {{#parseJSON '{
+      "content-section-type" : "a",
+      "project-heading" : "Cloudlab",
+      "project-copy" : "This was our process blog for New Media Team Project. I was the lead web developer for the blog. Built with wordpress as a back end and a custom theme was developed and used.",
+      "project-image" : "display_cloudlab.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
 
   </div>
-  <!-- /.content-section-b -->
-
-  <div class="content-section-a">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Rainmaker Designs</h2>
-          <p class="lead">Rebuilding a new experience for browsing the Rainmaker Designs website. Tyler Jason Designed and I built the framework for a unique website which slides sideways to unveil the content your looking for.</p>
-        </div>
-        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-          <img class="img-responsive" src="img/display_rainmaker.jpg" alt="">
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </div>
-  <!-- /.content-section-a -->
-
-  <div class="content-section-b">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Fusion Salon</h2>
-          <p class="lead">Redesign of the Rochester based Fusion Salon developed with Tyler Jason and Nick Law. The website is inspired by the Windows OS look and is built on top of wordpress to allow the client to easily update any part of the website in a snap. My role on the project was developing the site functionality.</p>
-        </div>
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <img class="img-responsive" src="img/display_fusion.jpg" alt="">
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </div>
-  <!-- /.content-section-b -->
-
-  <div class="content-section-a">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Mark Haven Photography</h2>
-          <p class="lead">Mark Haven is a popular 80′s Photographer from New York City and Rochester. Tyler Jason and I built him a new portfolio website to showcase his work.</p>
-        </div>
-        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-          <img class="img-responsive" src="img/display_markhaven.jpg" alt="">
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </div>
-  <!-- /.content-section-a -->
-
-  <div class="content-section-b">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Jon Johns Bakery</h2>
-          <p class="lead">A delicious new design centered around vibrant imagery of Jon Johns Bakery treats. Jon & John wanted a new space to keep customers up to date about the local bakery and events. Website was designed and developed with Tyler Jason.</p>
-        </div>
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-          <img class="img-responsive" src="img/display_jonjohns.jpg" alt="">
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </div>
-  <!-- /.content-section-b -->
-
-  <div class="content-section-a">
-
-    <div class="container">
-
-      <div class="row">
-        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-          <hr class="section-heading-spacer">
-          <div class="clearfix"></div>
-          <h2 class="section-heading">Cloudlab</h2>
-          <p class="lead">This was our process blog for New Media Team Project. I was the lead web developer for the blog. Built with wordpress as a back end and a custom theme was developed and used.</p>
-        </div>
-        <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-          <img class="img-responsive" src="img/display_cloudlab.jpg" alt="">
-        </div>
-      </div>
-
-    </div>
-    <!-- /.container -->
-
-  </div>
-  <!-- /.content-section-a -->
+  <!-- /.work -->
