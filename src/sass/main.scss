@@ -1,0 +1,13 @@
+@import 'variables';
+
+//Global Styles
+@import 'base/base';
+@import 'base/typography';
+
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/footer';
+
+@import 'components/hero';
+@import 'components/content-section';
+@import 'components/banner';

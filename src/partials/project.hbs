@@ -1,0 +1,25 @@
+ <div class="content-section-{{content-section-type}}">
+    <div class="container">
+      <div class="row">
+        {{#is content-section-type 'a'}}
+        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6 col-sm-6">
+        {{else}}
+        <div class="col-lg-5 col-sm-6">
+        {{/is}}
+          <hr class="section-heading-spacer">
+          <div class="clearfix"></div>
+          <h2 class="section-heading">{{project-heading}}</h2>
+          <p class="lead">{{{project-copy}}}</p>
+        </div>
+        {{#is content-section-type 'a'}}
+        <div class="col-lg-5 col-sm-pull-6 col-sm-6">
+        {{else}}
+        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+        {{/is}}
+          <img class="img-responsive" src="/img/{{project-image}}" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-section-b -->
