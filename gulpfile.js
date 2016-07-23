@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 var htmlmin = require('gulp-htmlmin');
 var extname = require('gulp-extname');
 var assemble = require('assemble');
+var helpers = require('handlebars-helpers');
 var app = assemble();
 
 gulp.task('sass', function () {
@@ -40,14 +41,14 @@ gulp.task('load', function(cb) {
 //Assemble Tasks
 app.task('pages', function() {
   return app.toStream('pages')
-    .pipe(app.renderFile())
+    .pipe(app.renderFile(helpers()))
     .pipe(htmlmin())
     .pipe(extname())
     .pipe(app.dest('www'));
 });
 app.task('docs', function() {
   return app.toStream('docs')
-    .pipe(app.renderFile())
+    .pipe(app.renderFile(helpers()))
     .pipe(htmlmin())
     .pipe(extname())
     .pipe(app.dest('www/style-guide/'));
