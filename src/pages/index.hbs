@@ -36,7 +36,7 @@ layout: default.hbs
         </div>
         <div class="col-md-4">
           <h2>Why Hire Me?</h2>
-          <p>Working at different companies which ranged from small 3 man shops to large digital agencies has given me the experience and adaptability to work in a multitude of different environments.</p>
+          <p>WHaving worked at different companies which ranged from small 3 man shops to large digital agencies has given me the experience and adaptability to work in an array of different environments.</p>
         </div>
       </div>
     </div>
@@ -46,8 +46,26 @@ layout: default.hbs
 
     {{#parseJSON '{
       "content-section-type" : "b",
+      "project-heading" : "Airbnb Open LA",
+      "project-copy" : "Built microsite for Airbnb Open LA Festival where coordinators could choose and plan events. <br><br>Check out a demo of the website <a href=\"http://airbnbopen.seth-whitaker.com\" target=\"_blank\">here</a>.",
+      "project-image" : "display_airbnb.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
+
+    {{#parseJSON '{
+      "content-section-type" : "a",
+      "project-heading" : "Yonji Kim Portfolio",
+      "project-copy" : "Developed a fully responsive personal portfolio website for designer, Yonji Kim. <br><br> Visit the website <a href=\"http://yonjikim.com\" target=\"_blank\">here</a>.",
+      "project-image" : "display_yonjikim.jpg"
+    }'}}
+      {{>project}}
+    {{/parseJSON}}
+
+    {{#parseJSON '{
+      "content-section-type" : "b",
       "project-heading" : "Samsung",
-      "project-copy" : "At MCD we developed a ground up rebuild of the entire <a href=\"http://samsung.com\">Samsung.com</a> experience from shopping to product showcase. I led a small team of developers for 8 months creating fully responsive custom front end templates and a style guide framework for Samsung.",
+      "project-copy" : "At MCD we developed a ground up rebuild of the entire Samsung.com experience from shopping to product showcase. I led a small team of developers for 8 months creating fully responsive custom front end templates and a style guide framework for Samsung.",
       "project-image" : "display_samsung.jpg"
     }'}}
       {{>project}}
@@ -56,7 +74,7 @@ layout: default.hbs
     {{#parseJSON '{
       "content-section-type" : "a",
       "project-heading" : "Bethesda.net",
-      "project-copy" : "Worked with & lead a small team at Rokkan to create a new platform for Bethesda Gaming called <a href=\"http://bethesda.net/\">Bethesda.net</a>.",
+      "project-copy" : "Worked with & lead a small team at Rokkan to create a new platform for Bethesda Gaming called <a href=\"http://bethesda.net\"  target=\"_blank\">Bethesda.net</a>.",
       "project-image" : "display_bethesda.jpg"
     }'}}
       {{>project}}
@@ -65,7 +83,7 @@ layout: default.hbs
     {{#parseJSON '{
       "content-section-type" : "b",
       "project-heading" : "Student Loans",
-      "project-copy" : "At MCD we created a new fully responsive informational website for Discover\'s Student Loan Division. <a href=\"http://studentloan.com\">Studentloan.com</a> is a brand new responsive experience for education about all things student loans. The website was built on wordpress for ease of use by our clients.",
+      "project-copy" : "At MCD we created a new fully responsive informational website for Discover\'s Student Loan Division. <a href=\"http://studentloan.com\" target=\"_blank\">Studentloan.com</a> is a brand new responsive experience for education about all things student loans. The website was built on wordpress for ease of use by our clients.",
       "project-image" : "display_studentloans.jpg"
     }'}}
       {{>project}}
@@ -74,7 +92,7 @@ layout: default.hbs
     {{#parseJSON '{
       "content-section-type" : "a",
       "project-heading" : "Kim Group Lab",
-      "project-copy" : "The Kim Group members wanted to have an easier website to share news, publications and research. I Collaborated with a designer to redesign and re-develop the Kim Group Lab website with a wordpress backend to achieve this goal.<br><br>Visit the website <a href=\"http://kim.physics.harvard.edu/\">here.</a>",
+      "project-copy" : "The Kim Group members wanted to have an easier website to share news, publications and research. I Collaborated with a designer to redesign and re-develop the Kim Group Lab website with a wordpress backend to achieve this goal.<br><br>Visit the website <a href=\"http://kim.physics.harvard.edu\" target=\"_blank\">here.</a>",
       "project-image" : "display_kimgroup.jpg"
     }'}}
       {{>project}}
@@ -110,7 +128,7 @@ layout: default.hbs
     {{#parseJSON '{
       "content-section-type" : "a",
       "project-heading" : "Mark Haven Photography",
-      "project-copy" : "Mark Haven is a popular 80′s Photographer from New York City and Rochester. Tyler Jason and I built him a new portfolio website to showcase his work.",
+      "project-copy" : "Mark Haven is a popular 80′s Photographer from New York City and Rochester. Tyler Jason and I built him a new portfolio website to showcase his <a href=\"http://markhavenphotography.com\" target=\"_blank\">work</a>.",
       "project-image" : "display_markhaven.jpg"
     }'}}
       {{>project}}
@@ -119,7 +137,7 @@ layout: default.hbs
     {{#parseJSON '{
       "content-section-type" : "b",
       "project-heading" : "Jon Johns Bakery",
-      "project-copy" : "A delicious new design centered around vibrant imagery of Jon Johns Bakery treats. Jon & John wanted a new space to keep customers up to date about the local bakery and events. Website was designed and developed with Tyler Jason.",
+      "project-copy" : "A delicious new design centered around vibrant imagery of <a href=\"http://jonjohnsbakery.com\" target=\"_blank\">Jon Johns Bakery</a> treats. Jon & John wanted a new space to keep customers up to date about the local bakery and events. Website was designed and developed with Tyler Jason.",
       "project-image" : "display_jonjohns.jpg"
     }'}}
       {{>project}}
