@@ -6,8 +6,9 @@ var sass = require('gulp-sass');
 var htmlmin = require('gulp-htmlmin');
 var extname = require('gulp-extname');
 var assemble = require('assemble');
-var helpers = require('handlebars-helpers');
 var app = assemble();
+var helpers = require('handlebars-helpers');
+app.helpers(helpers());
 
 gulp.task('sass', function () {
   return gulp.src('./src/sass/**/*.scss')
